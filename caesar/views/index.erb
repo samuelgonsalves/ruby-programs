@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Caesar Cipher
+	</title>
+	<style>
+		body
+		{
+			display:block;
+			text-align: center;
+		}
+		#plaintext
+		{
+		}
+		#encipher
+		{
+			background-color: #4169e1;
+			color: #FFFFFF;
+			display: block;
+			margin: auto;
+			margin-top: 20px;
+			margin-bottom:15px;
+			border: none;
+			border-radius: 5px;
+			width: 100px;
+			height: 50px;
+		}
+		#form
+		{
+			margin-top: 30px;
+		}
+		p
+		{
+			margin-top:30px;
+		}
+	</style>
+</head>
+<body>
+<div id= "form">
+	<form>
+		<input type="text" name="plaintext" id="plaintext" autocomplete="off">
+		<input type="submit" name="encipher" id="encipher" value="Encipher!">
+	</form>
+</div>
+<p>Plaintext:  <%= plaintext %></p>
+<p>Ciphertext:  <%= cipher_text %></p>
+</body>
+</html>
