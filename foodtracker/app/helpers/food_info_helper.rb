@@ -1,2 +1,0 @@
-module FoodInfoHelper
-end

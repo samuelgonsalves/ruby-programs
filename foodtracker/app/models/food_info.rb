@@ -1,2 +1,0 @@
-class FoodInfo < ApplicationRecord
-end
