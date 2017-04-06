@@ -1,0 +1,2 @@
+module FoodInfoHelper
+end

@@ -1,0 +1,2 @@
+module MyfoodinfoHelper
+end

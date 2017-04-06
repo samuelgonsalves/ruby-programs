@@ -1,0 +1,45 @@
+<h3>
+	
+</h3>
+
+<table>
+	<tr>
+		<td>
+			Food item
+		</td>
+		<td>
+			Calories
+		</td>
+		<td>
+			Carbs
+		</td>
+		<td>
+			Protein
+		</td>
+		<td>
+			Fat
+		</td>
+	</tr>
+	
+	<% @food_info_list.each do |food_info| %>
+		<tr>
+			<td>
+				<%= food_info.food_item %>
+			</td>
+			<td>
+				<%= food_info.calories %>
+			</td>
+			<td>
+				<%= food_info.carb %>
+			</td>
+			<td>
+				<%= food_info.protein %>
+			</td>
+			<td>
+				<%= food_info.fat %>
+			</td>
+		</tr>
+	<% end %>
+</table>
+
+<%= column_chart FoodInfo.group(:food_item).sum(:protein), width:"300px", height:"400px",library:{yAxis:{title:{text: 'Protein'}}} %>
